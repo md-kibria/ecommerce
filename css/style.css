@@ -1,0 +1,80 @@
+* {
+    outline: none;
+}
+body {
+    background-color: #eee;
+}
+
+section {
+    /* z-index: ; */
+    position: relative;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    color: transparent;
+    transition: .3s;
+}
+
+.swiper-header:hover .swiper-button-next::after,
+.swiper-header:hover .swiper-button-prev::after {
+    color: white;
+}
+
+header .swiper-pagination-bullet-active {
+    background-color: orange;
+}
+
+section .swiper-button-prev::after {
+    /* content: ''; */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 40px;
+    width: 40px;
+    padding-right: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    border-radius: 50%;
+    left: 20px;
+    position: absolute;
+    z-index: 333;
+}
+section .swiper-button-next::after {
+    /* content: ''; */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 40px;
+    width: 40px;
+    padding-left: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    border-radius: 50%;
+    right: 20px;
+    position: absolute;
+    z-index: 333;
+    transition: .3s;
+}
+
+.swiper-pro .swiper-button-next::after,
+.swiper-pro .swiper-button-prev::after {
+    background-color: transparent;
+    color: transparent;
+}
+.swiper-pro:hover .swiper-button-next::after,
+.swiper-pro:hover .swiper-button-prev::after {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.ad-img {
+    transition: .3s;
+    overflow: hidden;
+}
+
+.ad-img:hover {
+    transform: scale(1.02);
+}
